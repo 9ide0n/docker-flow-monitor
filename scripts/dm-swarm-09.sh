@@ -24,7 +24,7 @@ receivers:
         title: '{{ .GroupLabels.service }} service is in danger!'
         title_link: 'http://$(docker-machine ip swarm-1)/monitor/alerts'
         text: '{{ .CommonAnnotations.summary}}'
-        api_url: 'https://hooks.slack.com/services/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'
+        api_url: 'https://hooks.slack.com/services/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'
 " | docker secret create alert_manager_config -
 
 DOMAIN=$(docker-machine ip swarm-1) \
